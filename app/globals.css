@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(21, 21, 21, 1);
+  margin-inline: 100px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  color: aliceblue;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3, .footer h3 {
+  font-size: 31px;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav img {
+  width: 25px;
+}
+
+.cv a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.inform {
+  width: 700px;
+  margin-block: 100px
+}
+
+.inform h1 {
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+.inform h3 {
+  font-size: 32px;
+  margin-block: 30px;
+}
+
+.inform p {
+  margin-top: 43px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+
+   img {
+  width: 600px;
+  position: relative;
+  top: -90px;
+  z-index: -1;
+  }
+}
