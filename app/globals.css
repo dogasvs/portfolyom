@@ -31,13 +31,15 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-.header, .footer {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 7px;
+  padding: 40px 0;
 }
 
-.header h3, .footer h3 {
+.header h3{
   font-size: 31px;
   line-height: 32px;
   letter-spacing: -0.44px;
@@ -45,13 +47,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .nav {
   display: flex;
-  gap: 32px;
   list-style: none;
   align-items: center;
 }
 
-.nav img {
-  width: 25px;
+.nav svg {
+  width: 70px;
 }
 
 .cv a {
@@ -70,6 +71,10 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 88px;
   letter-spacing: -2.5px;
   text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15), 0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+  span {
+    margin-left: 30px;
+    border-bottom: 6px solid #4EE1A0;
+  }
 }
 
 .inform h3 {
@@ -90,9 +95,116 @@ p, h1, h2, h3, h4, h5, h6 {
   gap: 90px;
 
    img {
-  width: 600px;
-  position: relative;
-  top: -90px;
-  z-index: -1;
+    position: relative;
+    top: -130px;
+    z-index: -1;
   }
+}
+
+.forDekor {
+  svg {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+  }
+}
+
+hr {
+  border: 1px solid #414141;
+  margin-block: 30px;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+
+.yeteneklerim {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} 
+
+.yetenek-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.yetenek-item:hover {
+  transform: scale(1.2);
+}
+
+.projelerim {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 42px;
+  margin-top: 40px;
+}
+
+.proje-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  h4 {
+    margin-block: 10px;
+    font-size: 20px;  
+  }
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  opacity: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  pointer-events: none; 
+}
+
+.proje-item:hover .overlay {
+  opacity: 1; 
+  pointer-events: auto;
+}
+
+.view {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.viewProject, .viewCode {
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #4EE1A0;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.viewProject:hover, .viewCode:hover {
+  color: #4EE1A0;
 }
