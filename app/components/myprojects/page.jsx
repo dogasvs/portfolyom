@@ -25,7 +25,7 @@ export default function MyProjects() {
 
         <div className="proje-item">
           <a href="https://dinerestaurant.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Image src={Dine} width={600} height={400} alt="Dine" />
+            <Image src={Dine} width={600} height={400} alt="Dine" priority />
           </a>
             <div className="overlay">
               <div className="view">
@@ -39,7 +39,7 @@ export default function MyProjects() {
 
         <div className="proje-item">
           <a href="https://bahsis-hesaplama.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Image src={Bahsis} width={600} height={400} alt="Bahşiş Hesaplama" />
+            <Image src={Bahsis} width={600} height={400} alt="Bahşiş Hesaplama" priority />
           </a>
             <div className="overlay">
               <div className="view">
@@ -53,7 +53,7 @@ export default function MyProjects() {
 
         <div className="proje-item">
           <a href="https://quiz-page-react-tau.vercel.app/" target="_blank">
-            <Image src={Quiz} width={600} height={400} alt="Quiz" />
+            <Image src={Quiz} width={600} height={400} alt="Quiz" priority />
           </a>
             <div className="overlay">
               <div className="view">

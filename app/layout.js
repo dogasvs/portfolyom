@@ -4,6 +4,7 @@ import Header from "./components/header/page";
 import MySkills from "./components/myskills/page";
 import MyProjects from "./components/myprojects/page";
 import Footer from "./components/footer/page";
+import Dekor from "@/svgs/dekor/page";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,16 +27,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="container">
-        <Header />
-        <div className="main-layout">
-          <main className="content">{children}</main> 
-          <MySkills />
-          <MyProjects />
+          <Header />
+          <div className="main-layout">
+            <main className="content">{children}</main>
+            <MySkills />
+            <MyProjects />
+          </div>
         </div>
-        </div>
-          <footer>
+        <footer>
+          <Dekor className="footerDekor" />
           <Footer />
-          </footer>
+        </footer>
       </body>
     </html>
   );

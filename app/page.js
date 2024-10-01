@@ -11,7 +11,7 @@ export default function Home() {
         <h1>
           Merhaba 
           Ben 
-          <span>Doğa Savaş</span>
+          <span>Doğa</span>
         </h1>
         <h3>Frontend Developer</h3>
         <p>Ben Doğa, yenilikçi ve öğrenmeye açık bir Junior Frontend Developer'ım. Kullanıcı dostu ve modern web siteleri oluşturma konusunda tutkuluyum. Her geçen gün yeteneklerimi geliştirmek ve yeni teknolojiler öğrenmek için çalışıyorum. Heyecan verici projelerde birlikte çalışmak için sabırsızlanıyorum!</p>
