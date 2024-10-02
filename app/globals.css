@@ -71,7 +71,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .nav svg:hover {
-  fill: #4EE1A0; /* Hoverda değişecek renk */
+  fill: #4EE1A0; 
 }
 
 .inform {
