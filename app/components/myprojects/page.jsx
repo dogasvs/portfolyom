@@ -10,7 +10,7 @@ export default function MyProjects() {
       <h1 className="title">Projelerim</h1>
       <div className="projelerim">
         <div className="proje-item">
-            <Image src={Lookscout} width={600} height={400} alt="Lookscout" priority />
+            <Image src={Lookscout} width={600} height={300} alt="Lookscout" priority />
             <div className="overlay">
               <div className="view">
                 <a className="viewProject" href="https://ortak-proje.vercel.app/" target="_blank">Projeyi Görüntüle</a>
@@ -22,7 +22,7 @@ export default function MyProjects() {
         </div>
 
         <div className="proje-item">
-            <Image src={Dine} width={600} height={400} alt="Dine" priority />
+            <Image src={Dine} width={600} height={300} alt="Dine" priority />
             <div className="overlay">
               <div className="view">
                 <a className="viewProject" href="https://dine-restaurant-react-sigma.vercel.app/" target="_blank">Projeyi Görüntüle</a>
@@ -34,7 +34,7 @@ export default function MyProjects() {
         </div>
 
         <div className="proje-item">
-            <Image src={Bahsis} width={600} height={400} alt="Bahşiş Hesaplama" priority />
+            <Image src={Bahsis} width={600} height={300} alt="Bahşiş Hesaplama" priority />
             <div className="overlay">
               <div className="view">
                 <a className="viewProject" href="https://bahsis-hesaplama.vercel.app/" target="_blank">Projeyi Görüntüle</a>
@@ -46,7 +46,7 @@ export default function MyProjects() {
         </div>
 
         <div className="proje-item">
-            <Image src={Quiz} width={600} height={400} alt="Quiz" priority />
+            <Image src={Quiz} width={600} height={300} alt="Quiz" priority />
             <div className="overlay">
               <div className="view">
                 <a className="viewProject" href="https://quiz-page-react-tau.vercel.app/" target="_blank">Projeyi Görüntüle</a>
