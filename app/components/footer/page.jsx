@@ -1,4 +1,3 @@
-import Mail from "@/svgs/mail/page";
 import Header from "../header/page";
 
 export default function Footer() {
@@ -7,7 +6,6 @@ export default function Footer() {
       <div className="footerInformforMe">
         <h1>Benimle İletişime Geçin</h1>
         <p>Bana ulaşmak isterseniz, aşağıdaki iletişim bilgilerini kullanabilirsiniz. Her türlü soru, öneri veya işbirliği teklifine açığım. Size yardımcı olmaktan mutluluk duyarım!</p>
-        <strong>  <Mail /> doasavass@gmail.com </strong>
       </div>
         <hr /> 
         <Header />

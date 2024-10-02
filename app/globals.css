@@ -43,6 +43,14 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 40px 0;
 }
 
+.mail {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  gap: 10px;
+}
+
 .header h3{
   font-size: 31px;
   line-height: 32px;
@@ -57,12 +65,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .nav svg {
   width: 70px;
+  transition: fill 0.3s ease;
+  fill: white;
 }
 
-.cv a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+.nav svg:hover {
+  fill: #4EE1A0; /* Hoverda değişecek renk */
 }
 
 .inform {
@@ -84,10 +92,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .inform h3 {
   font-size: 32px;
   margin-block: 30px;
+  color: #4EE1A0;
 }
 
 .inform p {
-  margin-top: 43px;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -241,22 +249,138 @@ footer {
   p {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 120px;
   }
 
-  strong {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: #fff;
-    padding-bottom: 120px;
-  }
-
-  .cv {
-    display: none;
-  }
 }
 
 .footerInformforMe {
   max-width: 600px;
+}
+
+/* tablet başlangıç */
+@media (width <= 768px) {
+  .header, .yeteneklerim {
+    width: 1000px;
+    margin-bottom: 100px;
+    gap: 50px;
+  }
+
+  .footer {
+    gap: 50px;
+    width: 1000px;
+  }
+
+  .aboutUs {
+    justify-content: unset;
+    margin-bottom: 100px;
+  }
+
+  .inform {
+    margin-block: 0px;
+  }
+
+  .aboutUs img {
+    width: 500px;
+    top: 2px;
+  }
+
+  hr {
+    width: 970px;
+  }
+  
+  .proje-item {
+    width: 462px;
+  }
+
+  .proje-item h4, .footer h3 {
+    font-size: 27px;
+  }
+
+  .proje-item p {
+    font-size: 20px;
+  }
+
+}
+/* tablet bitiş */
+
+@media(width <= 378px) {
+  .header {
+    margin-bottom: 100px;
+  }
+
+  .header h3, .footer h3 {
+    font-size: 50px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav img {
+    width: 50px;
+  }
+
+  .aboutUs {
+    margin-inline: 100px;
+    width: 1000px;
+    flex-direction: column-reverse;
+  }
+
+  .aboutUs img {
+    border-radius: 20px;
+    width: 800px;
+  }
+
+  .inform {
+    text-align: center;
+    margin-inline: 68px;
+  }
+
+  .inform h3 {
+    font-size: 50px;
+  }
+
+  .inform p {
+    font-size: 43px;
+    line-height: 45px;
+    text-align: justify;
+  }
+
+  .baslik {
+    font-size: 37px;
+  }
+
+  .yeteneklerim {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .yeteneklerim img {
+    width: 200px;
+  }
+
+  .projelerim {
+    margin-inline: 70px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+  }
+
+  .proje-item {
+    width: 900px;
+  }
+
+  .proje-item h4 {
+    font-size: 50px;
+  }
+
+  .proje-item p {
+    font-size: 41px;
+  }
+
+  .dekor, .dekorTablet {
+    display: none;
+  }
+
 }
