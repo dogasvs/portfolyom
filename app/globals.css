@@ -284,18 +284,56 @@ hr {
   }
 }
 
-@media (max-width: 375px) {
-  .main-layout,
-  .header,
-  .yeteneklerim {
-    width: 100%;
-    padding-inline: 15px;
-  }
-
+@media (max-width: 430px) {
   .header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .inform {
+    width: 100%;
+    margin-block: 40px;
+    text-align: center;
+  }
+
+  .inform h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .homeContainer img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .yeteneklerim {
+    grid-template-columns: 1fr;
+  }
+
+  .yetenek-item svg {
+    width: 200px;
+    height: 250px;
+  }
+
+  .projelerim {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footerInformforMe {
+    margin-inline: 40px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerInformforMe {
+    max-width: 300px;
   }
 
   .inform {
@@ -309,18 +347,21 @@ hr {
     line-height: 56px;
   }
 
-  .homeContainer {
-    flex-direction: column;
-    gap: 30px;
+  .homeContainer img {
+    width: 400px;
+    height: 400px;
   }
 
   .yeteneklerim {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yetenek-item svg {
+    width: 100px;
+    height: 150px;
   }
 
   .projelerim {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 }
